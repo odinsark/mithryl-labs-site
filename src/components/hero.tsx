@@ -3,7 +3,7 @@ import { Particles } from "@/components/particles";
 
 export function Hero() {
   return (
-    <section className="relative flex flex-col items-center justify-start overflow-hidden px-6 pb-16 pt-24">
+    <section className="relative flex flex-col items-center justify-start overflow-hidden px-6 pb-16 pt-16 sm:pt-20">
       <div className="pointer-events-none absolute inset-0">
         <Particles />
       </div>
@@ -30,12 +30,11 @@ export function Hero() {
         </div>
 
         <h1 className="font-display text-3xl font-semibold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
-          Software for small businesses.
+          Custom software for small businesses.
         </h1>
 
         <p className="mt-5 max-w-xl text-base leading-relaxed text-foreground-muted sm:text-lg">
-          Websites, AI agents, and automations. Built one at a time, by one
-          person, for businesses that want the work to actually fit.
+          Websites, AI agents, and automations, built by one person.
         </p>
 
         <div className="mt-8">
