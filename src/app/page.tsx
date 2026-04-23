@@ -1,5 +1,6 @@
 import { Nav } from "@/components/nav";
 import { Hero } from "@/components/hero";
+import { PainPoints } from "@/components/pain-points";
 import { Services } from "@/components/services";
 import { Process } from "@/components/process";
 import { Manifesto } from "@/components/manifesto";
@@ -12,6 +13,7 @@ export default function Home() {
       <Nav />
       <main id="top">
         <Hero />
+        <PainPoints />
         <Services />
         <Manifesto />
         <Process />

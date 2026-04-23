@@ -17,18 +17,19 @@ export function Contact() {
             />
             <div className="relative">
               <p className="font-display text-sm uppercase tracking-[0.4em] text-mithril">
-                Get in touch
+                Start the conversation
               </p>
               <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-5xl">
-                Got something that needs <span className="mithril-text">building?</span>
+                Tell me what&rsquo;s <span className="mithril-text">broken</span>.
               </h2>
-              <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-foreground-muted sm:text-lg">
-                Send me a note. No sales dance, no discovery-call gauntlet — just
-                a human reply within a day or two, and a straight answer on
-                whether I can help.
+              <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-foreground-muted sm:text-lg">
+                No sales dance. No discovery-call gauntlet. Email me with
+                what&rsquo;s slowing you down, and I&rsquo;ll reply within a
+                business day with a straight answer on whether I can help — and
+                if I can&rsquo;t, who I&rsquo;d point you at instead.
               </p>
 
-              <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <a
                   href="mailto:ben@mithryllabs.com"
                   className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-full bg-foreground px-8 text-sm font-medium uppercase tracking-widest text-background transition-transform hover:-translate-y-0.5"
@@ -41,12 +42,12 @@ export function Contact() {
                 </a>
               </div>
 
-              <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs uppercase tracking-[0.3em] text-foreground-muted">
+              <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs uppercase tracking-[0.3em] text-foreground-muted">
                 <span>Palatine, IL</span>
                 <span className="hidden h-1 w-1 rounded-full bg-mithril sm:block" />
                 <span>Remote-first</span>
                 <span className="hidden h-1 w-1 rounded-full bg-mithril sm:block" />
-                <span>Small business friendly</span>
+                <span>Taking 2 new clients this quarter</span>
               </div>
             </div>
           </div>

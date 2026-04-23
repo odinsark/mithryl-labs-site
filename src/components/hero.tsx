@@ -29,17 +29,22 @@ export function Hero() {
           />
         </div>
 
-        <h1 className="font-display text-3xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl">
-          Small businesses deserve <span className="mithril-text">better software</span>.
-        </h1>
-
-        <p className="mt-8 max-w-xl text-base leading-relaxed text-foreground-muted sm:text-lg">
-          I&rsquo;m Ben. I build custom websites, AI agents, and automations for
-          small businesses — the kind of work you can&rsquo;t really buy off the
-          shelf and shouldn&rsquo;t have to cobble together yourself.
+        <p className="font-display text-xs uppercase tracking-[0.4em] text-mithril">
+          Software forged for small business
         </p>
 
-        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+        <h1 className="mt-6 font-display text-3xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl">
+          You didn&rsquo;t start a business to{" "}
+          <span className="mithril-text">live in spreadsheets</span>.
+        </h1>
+
+        <p className="mt-6 max-w-xl text-base leading-relaxed text-foreground-muted sm:text-lg">
+          Custom websites, AI agents, and automations for small businesses —
+          built by one person who gives a damn, not billed by a team of six
+          you&rsquo;ll never meet.
+        </p>
+
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <a
             href="#contact"
             className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-full bg-foreground px-8 text-sm font-medium uppercase tracking-widest text-background transition-transform hover:-translate-y-0.5"
@@ -54,9 +59,13 @@ export function Hero() {
             href="#work"
             className="inline-flex h-12 items-center justify-center rounded-full border border-rule bg-surface px-8 text-sm font-medium uppercase tracking-widest text-foreground backdrop-blur-sm transition-colors hover:border-mithril"
           >
-            What I build
+            See what I build
           </a>
         </div>
+
+        <p className="mt-6 text-xs uppercase tracking-[0.3em] text-foreground-muted">
+          Best fit for 1–20 person businesses that have outgrown their tools
+        </p>
       </div>
     </section>
   );
