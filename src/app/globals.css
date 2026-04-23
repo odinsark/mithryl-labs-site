@@ -155,6 +155,34 @@ main, header, footer, section {
   animation: forge-pulse 6s ease-in-out infinite;
 }
 
+/* Layered glow that follows PNG alpha — absorbs the logo's white
+   anti-aliasing fringe into a silver/blue halo. */
+.logo-glow {
+  filter:
+    drop-shadow(0 0 6px rgba(199, 208, 221, 0.55))
+    drop-shadow(0 0 20px rgba(139, 184, 255, 0.45))
+    drop-shadow(0 0 48px rgba(139, 184, 255, 0.25));
+}
+
+@keyframes logo-breathe {
+  0%, 100% {
+    filter:
+      drop-shadow(0 0 6px rgba(199, 208, 221, 0.55))
+      drop-shadow(0 0 20px rgba(139, 184, 255, 0.45))
+      drop-shadow(0 0 48px rgba(139, 184, 255, 0.25));
+  }
+  50% {
+    filter:
+      drop-shadow(0 0 8px rgba(199, 208, 221, 0.7))
+      drop-shadow(0 0 28px rgba(139, 184, 255, 0.55))
+      drop-shadow(0 0 64px rgba(139, 184, 255, 0.35));
+  }
+}
+
+.logo-breathe {
+  animation: logo-breathe 6s ease-in-out infinite;
+}
+
 /* Gradient border cards */
 .mithril-border {
   position: relative;
