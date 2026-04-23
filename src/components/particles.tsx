@@ -1,11 +1,9 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { useTheme } from "next-themes";
 
 export function Particles() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const { resolvedTheme } = useTheme();
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -15,8 +13,6 @@ export function Particles() {
 
     let width = (canvas.width = canvas.offsetWidth * devicePixelRatio);
     let height = (canvas.height = canvas.offsetHeight * devicePixelRatio);
-
-    const isDark = resolvedTheme === "dark";
 
     type P = { x: number; y: number; vx: number; vy: number; r: number; life: number };
     const count = 60;
@@ -49,12 +45,10 @@ export function Particles() {
       ctx.clearRect(0, 0, width, height);
 
       for (const p of particles) {
-        // Drift upwards like embers / motes of mithril dust
         p.x += p.vx;
         p.y += p.vy;
         p.life += 0.003;
 
-        // Slight attraction to mouse
         const dx = mouseX - p.x;
         const dy = mouseY - p.y;
         const dist = Math.hypot(dx, dy);
@@ -74,13 +68,10 @@ export function Particles() {
         const alpha = 0.2 + Math.sin(p.life * Math.PI * 2) * 0.25;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r * devicePixelRatio, 0, Math.PI * 2);
-        ctx.fillStyle = isDark
-          ? `rgba(199, 208, 221, ${alpha})`
-          : `rgba(42, 61, 107, ${alpha * 0.55})`;
+        ctx.fillStyle = `rgba(199, 208, 221, ${alpha})`;
         ctx.fill();
       }
 
-      // Connective filaments — like runes weaving
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const a = particles[i];
@@ -89,13 +80,11 @@ export function Particles() {
           const dy = a.y - b.y;
           const d = Math.hypot(dx, dy);
           if (d < 140 * devicePixelRatio) {
-            const alpha = (1 - d / (140 * devicePixelRatio)) * (isDark ? 0.12 : 0.08);
+            const alpha = (1 - d / (140 * devicePixelRatio)) * 0.12;
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
             ctx.lineTo(b.x, b.y);
-            ctx.strokeStyle = isDark
-              ? `rgba(139, 184, 255, ${alpha})`
-              : `rgba(42, 61, 107, ${alpha})`;
+            ctx.strokeStyle = `rgba(139, 184, 255, ${alpha})`;
             ctx.lineWidth = 0.5 * devicePixelRatio;
             ctx.stroke();
           }
@@ -112,7 +101,7 @@ export function Particles() {
       window.removeEventListener("mousemove", onMove);
       window.removeEventListener("resize", onResize);
     };
-  }, [resolvedTheme]);
+  }, []);
 
   return (
     <canvas

@@ -29,10 +29,10 @@ const services = [
 
 export function Services() {
   return (
-    <section id="work" className="relative px-6 py-32 sm:py-40">
+    <section id="work" className="relative px-6 py-8 sm:py-10">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <div className="mb-20 text-center">
+          <div className="mb-8 text-center">
             <p className="font-display text-sm uppercase tracking-[0.4em] text-mithril">
               What I build
             </p>

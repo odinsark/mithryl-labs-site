@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Cinzel, Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
 
 const cinzel = Cinzel({
   variable: "--font-cinzel",
@@ -17,7 +16,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Mithryl Labs — Software forged for small business",
   description:
-    "Custom websites, AI agents, and automations for small businesses. Forged in Palatine, IL by Ben Williamson.",
+    "Custom websites, AI agents, and automations for small businesses. Built in Palatine, IL by Ben Williamson.",
   icons: {
     icon: "/logos/mithryl-mark.png",
   },
@@ -37,19 +36,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      suppressHydrationWarning
-      className={`${cinzel.variable} ${inter.variable} h-full antialiased`}
+      className={`dark ${cinzel.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
-      </body>
+      <body className="min-h-full">{children}</body>
     </html>
   );
 }

@@ -2,10 +2,10 @@ import { Reveal } from "@/components/reveal";
 
 export function Manifesto() {
   return (
-    <section className="relative px-6 py-32 sm:py-40">
+    <section className="relative px-6 py-8 sm:py-10">
       <div className="mx-auto max-w-4xl">
         <Reveal>
-          <div className="rune-rule mb-10 font-display text-xs uppercase tracking-[0.5em]">
+          <div className="rune-rule mb-6 font-display text-xs uppercase tracking-[0.5em]">
             Why Mithryl
           </div>
         </Reveal>
@@ -21,7 +21,7 @@ export function Manifesto() {
         </Reveal>
 
         <Reveal delay={200}>
-          <div className="mt-12 space-y-5 text-base leading-relaxed text-foreground-muted sm:text-lg">
+          <div className="mt-8 space-y-4 text-base leading-relaxed text-foreground-muted sm:text-lg">
             <p>
               Small businesses get served badly by the software industry. The
               enterprise stuff is expensive and overbuilt. The cheap stuff is

@@ -3,7 +3,7 @@ import { Particles } from "@/components/particles";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6 pb-24 pt-32">
+    <section className="relative flex flex-col items-center justify-start overflow-hidden px-6 pb-16 pt-24">
       <div className="pointer-events-none absolute inset-0">
         <Particles />
       </div>
@@ -20,7 +20,7 @@ export function Hero() {
       />
 
       <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center text-center">
-        <div className="mb-10 flex items-center justify-center">
+        <div className="mb-6 flex items-center justify-center">
           <Logo
             width={720}
             height={232}

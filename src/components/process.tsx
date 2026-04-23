@@ -25,7 +25,7 @@ const steps = [
 
 export function Process() {
   return (
-    <section id="process" className="relative px-6 py-32 sm:py-40">
+    <section id="process" className="relative px-6 py-8 sm:py-10">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-mithril/40 to-transparent"
@@ -33,7 +33,7 @@ export function Process() {
 
       <div className="mx-auto max-w-5xl">
         <Reveal>
-          <div className="mb-20 text-center">
+          <div className="mb-8 text-center">
             <p className="font-display text-sm uppercase tracking-[0.4em] text-mithril">
               Process
             </p>
@@ -43,7 +43,7 @@ export function Process() {
           </div>
         </Reveal>
 
-        <ol className="relative space-y-16">
+        <ol className="relative space-y-8">
           <div
             aria-hidden
             className="absolute left-6 top-4 bottom-4 hidden w-px bg-gradient-to-b from-mithril/0 via-mithril/50 to-mithril/0 sm:block"
