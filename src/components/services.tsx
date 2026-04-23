@@ -4,7 +4,7 @@ const services = [
   {
     rune: "◈",
     title: "Websites",
-    body: "A new site for your business, a portal for your customers, or a private site just for your team. Fast, professional, and easy to find online.",
+    body: "A new site for your business, an online storefront, or a private site just for your team. Fast, professional, and easy to find online.",
   },
   {
     rune: "⟡",
@@ -19,7 +19,7 @@ const services = [
   {
     rune: "✦",
     title: "Custom Software",
-    body: "When off-the-shelf tools don't fit your business, I build the one that does. Dashboards, customer portals, or the specific tool your team actually needs.",
+    body: "When off-the-shelf tools don't fit your business, I build the one that does. Dashboards, scheduling tools, inventory trackers, or the specific app your team actually needs.",
   },
 ];
 
