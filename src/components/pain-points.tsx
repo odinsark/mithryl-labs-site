@@ -47,10 +47,10 @@ export function PainPoints() {
           </div>
         </Reveal>
 
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-2 sm:auto-rows-fr">
           {pains.map((pain, i) => (
-            <Reveal key={i} delay={i * 60}>
-              <div className="flex gap-4 rounded-xl border border-rule bg-background-secondary/50 p-5 transition-colors hover:border-mithril/40">
+            <Reveal key={i} delay={i * 60} className="h-full">
+              <div className="flex h-full gap-4 rounded-xl border border-rule bg-background-secondary/50 p-5 transition-colors hover:border-mithril/40">
                 <span className="mt-1 font-display text-xl text-mithril">
                   {pain.glyph}
                 </span>

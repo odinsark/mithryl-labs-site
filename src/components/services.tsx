@@ -47,10 +47,10 @@ export function Services() {
           </div>
         </Reveal>
 
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-2 sm:auto-rows-fr">
           {services.map((service, i) => (
-            <Reveal key={service.title} delay={i * 100}>
-              <article className="mithril-border group relative overflow-hidden rounded-2xl p-8 transition-transform hover:-translate-y-1">
+            <Reveal key={service.title} delay={i * 100} className="h-full">
+              <article className="mithril-border group relative flex h-full flex-col overflow-hidden rounded-2xl p-8 transition-transform hover:-translate-y-1">
                 <div
                   className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full opacity-0 blur-3xl transition-opacity duration-700 group-hover:opacity-60"
                   style={{ background: "var(--accent-glow)" }}
