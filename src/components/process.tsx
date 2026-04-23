@@ -19,7 +19,7 @@ const steps = [
   {
     numeral: "04",
     title: "Launch",
-    body: "I stay on to tune, train your team, and handle follow-ups. You own everything we built.",
+    body: "I stay on after launch to maintain, tune, and iterate. Ongoing support is part of the relationship, not an afterthought.",
   },
 ];
 
