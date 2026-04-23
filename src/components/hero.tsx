@@ -25,7 +25,7 @@ export function Hero() {
             width={720}
             height={232}
             priority
-            className="logo-breathe h-auto w-[min(320px,70vw)]"
+            className="logo-breathe h-auto w-[min(400px,87vw)]"
           />
         </div>
 
