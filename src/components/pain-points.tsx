@@ -3,7 +3,7 @@ import { Reveal } from "@/components/reveal";
 const pains = [
   {
     glyph: "◇",
-    body: "Some tell me they&rsquo;re the bottleneck in their own business — every decision, every approval, every odd request flows through them, because nothing is really systematized.",
+    body: "Some tell me they&rsquo;re the bottleneck in their own business. Every decision, every approval, every odd request flows through them, because nothing is really systematized.",
   },
   {
     glyph: "◇",
@@ -11,11 +11,11 @@ const pains = [
   },
   {
     glyph: "◇",
-    body: "Some say their team spends half the week moving data between tools that don&rsquo;t talk to each other — and they can feel the real work getting buried.",
+    body: "Some say their team spends half the week moving data between tools that don&rsquo;t talk to each other, and they can feel the real work getting buried.",
   },
   {
     glyph: "◇",
-    body: "Others tell me their website feels tired, slow, or off-brand — and that it&rsquo;s starting to show up in how customers see them.",
+    body: "Others tell me their website feels tired, slow, or off-brand, and that it&rsquo;s starting to show up in how customers see them.",
   },
   {
     glyph: "◇",
@@ -23,7 +23,7 @@ const pains = [
   },
   {
     glyph: "◇",
-    body: "And almost everyone says the same thing underneath all of it — they feel stuck, a little behind, and not sure who to trust to help.",
+    body: "And almost everyone says the same thing underneath all of it: they feel stuck, a little behind, and not sure who to trust to help.",
   },
 ];
 

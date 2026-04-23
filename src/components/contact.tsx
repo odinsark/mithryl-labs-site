@@ -30,8 +30,8 @@ export function Contact() {
               <p className="mx-auto mt-4 max-w-xl text-sm italic leading-relaxed text-foreground-muted">
                 I don&rsquo;t know yet whether I&rsquo;m the right fit for what
                 you&rsquo;re dealing with. If I am, I&rsquo;ll tell you how
-                I&rsquo;d help. If I&rsquo;m not, I&rsquo;ll tell you that too
-                — and point you at someone who might be.
+                I&rsquo;d help. If I&rsquo;m not, I&rsquo;ll tell you that too,
+                and point you at someone who might be.
               </p>
 
               <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">

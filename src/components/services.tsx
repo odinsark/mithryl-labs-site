@@ -5,13 +5,13 @@ const services = [
     rune: "◈",
     title: "Websites",
     pain: "For businesses whose site isn't doing the work it should.",
-    body: "Custom-built sites — not templates. Designed to be fast, findable, easy for your team to update, and actually reflect the business you're running today. Yours to keep, wherever you want it hosted.",
+    body: "Custom-built sites, not templates. Designed to be fast, findable, easy for your team to update, and actually reflect the business you're running today. Yours to keep, wherever you want it hosted.",
   },
   {
     rune: "⟡",
     title: "AI Agents",
     pain: "For businesses that know AI matters but haven't found their first real use for it.",
-    body: "We start with the one workflow in your business where AI will pay for itself — then I build the agent that runs it. Trained on your data, fit to your voice, and explained in plain English so your team isn't guessing.",
+    body: "We start with the one workflow in your business where AI will pay for itself. Then I build the agent that runs it. Trained on your data, fit to your voice, and explained in plain English so your team isn't guessing.",
   },
   {
     rune: "❖",
@@ -23,7 +23,7 @@ const services = [
     rune: "✦",
     title: "Custom Software",
     pain: "For businesses bending around tools, instead of tools bending around them.",
-    body: "Internal dashboards, client portals, niche apps — built around how your business actually works. Priced like a project, not a six-figure enterprise rollout. Scales with you, not against you.",
+    body: "Internal dashboards, client portals, niche apps, built around how your business actually works. Priced like a project, not a six-figure enterprise rollout. Scales with you, not against you.",
   },
 ];
 
@@ -41,7 +41,7 @@ export function Services() {
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-foreground-muted sm:text-lg">
               Not a menu of fifty services. Four disciplines, each sharpened
-              until it&rsquo;s sharp — and deliberately chosen because they
+              until it&rsquo;s sharp, and deliberately chosen because they
               tend to work together.
             </p>
           </div>

@@ -43,7 +43,7 @@ export function Manifesto() {
               agency with the responsiveness of a neighbor. Fewer clients,
               closer attention, better work.
             </p>
-            <p className="text-foreground">— Ben Williamson, Mithryl Labs</p>
+            <p className="text-foreground">Ben Williamson, Mithryl Labs</p>
           </div>
         </Reveal>
       </div>

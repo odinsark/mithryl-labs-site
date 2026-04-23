@@ -4,7 +4,7 @@ const steps = [
   {
     numeral: "01",
     title: "Discovery",
-    body: "We talk. I ask questions — lots of them. The goal of the first call is to figure out what's actually slowing you down and whether I'm the right person to help. If I'm not, I'll tell you. If I am, we keep going.",
+    body: "We talk. I ask questions. Lots of them. The goal of the first call is to figure out what's actually slowing you down and whether I'm the right person to help. If I'm not, I'll tell you. If I am, we keep going.",
   },
   {
     numeral: "02",
@@ -19,7 +19,7 @@ const steps = [
   {
     numeral: "04",
     title: "Launch & Support",
-    body: "Launch day is a beginning, not an end. I stay on to tune, train your team, and help with the follow-up questions that always come up. You own what we build — the code, the accounts, the keys.",
+    body: "Launch day is a beginning, not an end. I stay on to tune, train your team, and help with the follow-up questions that always come up. You own what we build: the code, the accounts, the keys.",
   },
 ];
 
@@ -41,7 +41,7 @@ export function Process() {
               Clear scope, <span className="mithril-text">no black boxes</span>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-foreground-muted sm:text-lg">
-              Here&rsquo;s what working together looks like end to end — so you
+              Here&rsquo;s what working together looks like end to end, so you
               know what you&rsquo;re signing up for before you sign up for it.
             </p>
           </div>

@@ -40,7 +40,7 @@ export function Hero() {
 
         <p className="mt-6 max-w-xl text-base leading-relaxed text-foreground-muted sm:text-lg">
           I build custom websites, AI agents, and automations for small
-          businesses. One person, close attention, sharp work — not a team of
+          businesses. One person, close attention, sharp work. Not a team of
           six you&rsquo;ll never meet.
         </p>
 
@@ -64,7 +64,7 @@ export function Hero() {
         </div>
 
         <p className="mt-6 max-w-lg text-xs italic leading-relaxed text-foreground-muted">
-          I don&rsquo;t know if what I do is the right fit for you — but if any
+          I don&rsquo;t know if what I do is the right fit for you, but if any
           of this sounds familiar, it might be worth a few minutes to find out.
         </p>
       </div>

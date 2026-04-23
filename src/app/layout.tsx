@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mithryl Labs — Software forged for small business",
+  title: "Mithryl Labs · Software forged for small business",
   description:
     "Custom websites, AI agents, and automations for small businesses. Built in Palatine, IL by Ben Williamson.",
   icons: {
