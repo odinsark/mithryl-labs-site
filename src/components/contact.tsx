@@ -17,15 +17,15 @@ export function Contact() {
             />
             <div className="relative">
               <p className="font-display text-sm uppercase tracking-[0.4em] text-mithril">
-                The Commission
+                Get in touch
               </p>
               <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-5xl">
-                Got something that <span className="mithril-text">needs forging?</span>
+                Got something that needs <span className="mithril-text">building?</span>
               </h2>
               <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-foreground-muted sm:text-lg">
-                Send me a note. No sales dance, no discovery-call gauntlet — just a
-                human reply within a day or two, and a straight answer on whether I
-                can help.
+                Send me a note. No sales dance, no discovery-call gauntlet — just
+                a human reply within a day or two, and a straight answer on
+                whether I can help.
               </p>
 
               <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">

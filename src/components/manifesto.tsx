@@ -6,38 +6,35 @@ export function Manifesto() {
       <div className="mx-auto max-w-4xl">
         <Reveal>
           <div className="rune-rule mb-10 font-display text-xs uppercase tracking-[0.5em]">
-            A note from the smith
+            Why Mithryl
           </div>
         </Reveal>
 
         <Reveal delay={100}>
           <blockquote className="font-display text-2xl leading-relaxed text-foreground sm:text-3xl md:text-4xl">
-            <span className="text-mithril">&ldquo;</span>
             Big agencies build for the brand.{" "}
             <span className="mithril-text">I build for the business.</span>{" "}
             The corner shop with three employees. The consultant drowning in
-            spreadsheets. The founder who can&rsquo;t afford a six-month enterprise
-            rollout but needs the same quality of tool.
-            <span className="text-mithril">&rdquo;</span>
+            spreadsheets. The founder who can&rsquo;t afford a six-month
+            enterprise rollout but needs the same quality of tool.
           </blockquote>
         </Reveal>
 
         <Reveal delay={200}>
-          <div className="mt-12 space-y-5 text-lg leading-relaxed text-foreground-muted">
+          <div className="mt-12 space-y-5 text-base leading-relaxed text-foreground-muted sm:text-lg">
             <p>
-              Mithril, in Tolkien&rsquo;s telling, was worth more than gold — not
-              because it was rare, but because it was{" "}
-              <em className="text-foreground">right</em>. Light enough to wear all
-              day. Strong enough to stop an orc-spear. Beautiful without trying.
+              Small businesses get served badly by the software industry. The
+              enterprise stuff is expensive and overbuilt. The cheap stuff is
+              brittle and forgettable. And the agency layer in the middle is
+              mostly selling the same five templates to everyone.
             </p>
             <p>
-              That&rsquo;s the bar. Software that&rsquo;s easy enough your team
-              actually uses it. Strong enough to hold up when things get busy.
-              Crafted well enough that you&rsquo;re a little proud to show it off.
+              Mithryl Labs is a one-person studio built on the opposite bet:
+              that a small, thoughtful shop can deliver the quality of a big
+              agency with the responsiveness of a neighbor. Fewer clients,
+              closer attention, better work.
             </p>
-            <p className="text-foreground">
-              — Ben Williamson, Mithryl Labs
-            </p>
+            <p className="text-foreground">— Ben Williamson, Mithryl Labs</p>
           </div>
         </Reveal>
       </div>

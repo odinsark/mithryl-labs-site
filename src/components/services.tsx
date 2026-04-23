@@ -4,47 +4,44 @@ const services = [
   {
     rune: "◈",
     title: "Websites",
-    tagline: "Armor for your brand.",
-    body: "Fast, beautifully built sites with no bloat and no templates. Crafted to load in a blink, rank on Google, and actually convert — from the copy to the final animation.",
+    tagline: "Fast, sharp, yours.",
+    body: "Custom marketing sites built from scratch — not templates. Fast to load, easy to update, and designed to actually convert. SEO and analytics wired in from day one.",
   },
   {
     rune: "⟡",
     title: "AI Agents",
-    tagline: "A spellbook for your team.",
-    body: "Custom AI agents that handle the tedious parts of your business — research, outreach, summaries, scheduling. Built with Claude, purpose-fit, and yours to keep.",
+    tagline: "Put AI to work on the real stuff.",
+    body: "Custom agents that do the tedious parts of your business — research, outreach, summaries, internal Q&A. Built with Claude, fine-tuned to your voice and workflows, and fully owned by you.",
   },
   {
     rune: "❖",
     title: "Automations",
-    tagline: "The invisible smith.",
-    body: "Workflows that quietly replace the hours you waste on copy-paste work. Spreadsheets that talk to your tools. Tools that talk to each other. Less chaos, more output.",
+    tagline: "Quietly replace the busywork.",
+    body: "Workflows that wire your tools together so data stops living in six places. Less copy-paste, fewer dropped balls, more of your team's time back.",
   },
   {
     rune: "✦",
     title: "Custom Software",
-    tagline: "One-of-a-kind blades.",
-    body: "Internal dashboards, client portals, niche apps — if the off-the-shelf tools don't fit, I'll forge one that does. Built to scale with you, not against you.",
+    tagline: "When off-the-shelf doesn't fit.",
+    body: "Internal dashboards, client portals, niche apps — built around how your business actually works. Designed to grow with you, not get in your way.",
   },
 ];
 
 export function Services() {
   return (
-    <section
-      id="craft"
-      className="relative px-6 py-32 sm:py-40"
-    >
+    <section id="work" className="relative px-6 py-32 sm:py-40">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <div className="mb-20 text-center">
             <p className="font-display text-sm uppercase tracking-[0.4em] text-mithril">
-              The Craft
+              What I build
             </p>
             <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-5xl">
-              What I <span className="mithril-text">forge</span>
+              Four things, done <span className="mithril-text">really well</span>
             </h2>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground-muted">
-              Every project is one-off. No recycled themes, no cookie-cutter agency
-              playbooks — just tools built for the shape of your business.
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-foreground-muted sm:text-lg">
+              Every engagement is custom. No recycled themes, no cookie-cutter
+              agency playbooks — just tools built for the shape of your business.
             </p>
           </div>
         </Reveal>
