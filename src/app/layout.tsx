@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cinzel, Inter } from "next/font/google";
+import { Background } from "@/components/background";
 import "./globals.css";
 
 const cinzel = Cinzel({
@@ -38,7 +39,10 @@ export default function RootLayout({
       lang="en"
       className={`dark ${cinzel.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full">
+        <Background />
+        {children}
+      </body>
     </html>
   );
 }

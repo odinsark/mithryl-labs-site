@@ -1,24 +1,8 @@
 import { Logo } from "@/components/logo";
-import { Particles } from "@/components/particles";
 
 export function Hero() {
   return (
-    <section className="relative flex flex-col items-center justify-start overflow-hidden px-6 pb-16 pt-16 sm:pt-20">
-      <div className="pointer-events-none absolute inset-0">
-        <Particles />
-      </div>
-
-      <div
-        aria-hidden
-        className="forge-pulse pointer-events-none absolute left-1/2 top-1/2 h-[60vmin] w-[60vmin] -translate-x-1/2 -translate-y-1/2 rounded-full"
-        style={{
-          background:
-            "radial-gradient(circle, var(--accent-glow) 0%, transparent 60%)",
-          opacity: 0.3,
-          filter: "blur(60px)",
-        }}
-      />
-
+    <section className="relative flex flex-col items-center justify-start px-6 pb-16 pt-16 sm:pt-20">
       <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center text-center">
         <div className="mb-8 flex items-center justify-center">
           <Logo
