@@ -20,13 +20,18 @@ export function Contact() {
                 Start the conversation
               </p>
               <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-5xl">
-                Tell me what&rsquo;s <span className="mithril-text">broken</span>.
+                Tell me what&rsquo;s <span className="mithril-text">slowing you down</span>
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-foreground-muted sm:text-lg">
-                No sales dance. No discovery-call gauntlet. Email me with
-                what&rsquo;s slowing you down, and I&rsquo;ll reply within a
-                business day with a straight answer on whether I can help — and
-                if I can&rsquo;t, who I&rsquo;d point you at instead.
+                No sales dance. No long discovery gauntlet. Send me a short
+                note about what&rsquo;s going on in your business, and
+                I&rsquo;ll reply within a business day.
+              </p>
+              <p className="mx-auto mt-4 max-w-xl text-sm italic leading-relaxed text-foreground-muted">
+                I don&rsquo;t know yet whether I&rsquo;m the right fit for what
+                you&rsquo;re dealing with. If I am, I&rsquo;ll tell you how
+                I&rsquo;d help. If I&rsquo;m not, I&rsquo;ll tell you that too
+                — and point you at someone who might be.
               </p>
 
               <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -47,7 +52,7 @@ export function Contact() {
                 <span className="hidden h-1 w-1 rounded-full bg-mithril sm:block" />
                 <span>Remote-first</span>
                 <span className="hidden h-1 w-1 rounded-full bg-mithril sm:block" />
-                <span>Taking 2 new clients this quarter</span>
+                <span>Small and mid-size only</span>
               </div>
             </div>
           </div>

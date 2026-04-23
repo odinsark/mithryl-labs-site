@@ -3,23 +3,27 @@ import { Reveal } from "@/components/reveal";
 const pains = [
   {
     glyph: "◇",
-    title: "Your website looks like 2019",
-    body: "Slow. Hard to update. The agency that built it ghosted six months after launch. Customers bounce before they read the first paragraph.",
+    body: "Some tell me they&rsquo;re the bottleneck in their own business — every decision, every approval, every odd request flows through them, because nothing is really systematized.",
   },
   {
     glyph: "◇",
-    title: "You know you need AI — you just don't know where to start",
-    body: "Everyone's telling you to adopt it. The tools multiply every week. You don't want a ChatGPT subscription, you want something that actually does the job.",
+    body: "Others say they know they should be doing more with AI, but the noise is deafening and they don&rsquo;t really trust the people selling it.",
   },
   {
     glyph: "◇",
-    title: "Your team is copy-pasting between five tools",
-    body: "Data lives in the CRM, the spreadsheet, the email, the PDF, and someone's head. Everyone's busy. Nothing connects. Hours leak every week.",
+    body: "Some say their team spends half the week moving data between tools that don&rsquo;t talk to each other — and they can feel the real work getting buried.",
   },
   {
     glyph: "◇",
-    title: "You got burned by an agency once and swore never again",
-    body: "Paid $20K for a template with your logo on it. Missed deadlines. Radio silence after launch. You'd rather suffer in Excel than risk that again.",
+    body: "Others tell me their website feels tired, slow, or off-brand — and that it&rsquo;s starting to show up in how customers see them.",
+  },
+  {
+    glyph: "◇",
+    body: "Some describe a bigger version of the same problem: they&rsquo;ve outgrown every off-the-shelf tool, but hiring a dev team isn&rsquo;t remotely on the table.",
+  },
+  {
+    glyph: "◇",
+    body: "And almost everyone says the same thing underneath all of it — they feel stuck, a little behind, and not sure who to trust to help.",
   },
 ];
 
@@ -30,30 +34,30 @@ export function PainPoints() {
         <Reveal>
           <div className="mb-8 text-center">
             <p className="font-display text-sm uppercase tracking-[0.4em] text-mithril">
-              Sound familiar?
+              You know how it goes
             </p>
             <h2 className="mt-4 font-display text-2xl font-semibold tracking-tight text-foreground sm:text-4xl">
-              If any of this rings true, we should{" "}
-              <span className="mithril-text">talk</span>
+              When small business owners talk to me, they tend to{" "}
+              <span className="mithril-text">say the same things</span>
             </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-foreground-muted sm:text-base">
+              Not all of this will apply to you. Some might. If any of it does,
+              you&rsquo;re probably in the right place.
+            </p>
           </div>
         </Reveal>
 
         <div className="grid gap-4 sm:grid-cols-2">
           {pains.map((pain, i) => (
-            <Reveal key={pain.title} delay={i * 80}>
+            <Reveal key={i} delay={i * 60}>
               <div className="flex gap-4 rounded-xl border border-rule bg-background-secondary/50 p-5 transition-colors hover:border-mithril/40">
                 <span className="mt-1 font-display text-xl text-mithril">
                   {pain.glyph}
                 </span>
-                <div>
-                  <h3 className="font-display text-base font-semibold text-foreground sm:text-lg">
-                    {pain.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-foreground-muted">
-                    {pain.body}
-                  </p>
-                </div>
+                <p
+                  className="text-sm leading-relaxed text-foreground-muted sm:text-base"
+                  dangerouslySetInnerHTML={{ __html: pain.body }}
+                />
               </div>
             </Reveal>
           ))}

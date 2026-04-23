@@ -4,22 +4,22 @@ const steps = [
   {
     numeral: "01",
     title: "Discovery",
-    body: "We talk. I listen longer than most consultants do — because I can't fix what I don't understand. By the end of the first call, I can usually tell you which part of your business is leaking the most time and whether I'm the right person to help fix it.",
+    body: "We talk. I ask questions — lots of them. The goal of the first call is to figure out what's actually slowing you down and whether I'm the right person to help. If I'm not, I'll tell you. If I am, we keep going.",
   },
   {
     numeral: "02",
     title: "Proposal",
-    body: "A clear, written scope — deliverables, timeline, fixed price. No open-ended hourly billing. No 'it depends.' No surprise invoices. If the price isn't right or the scope isn't right, we fix it now — before either of us is committed.",
+    body: "A written scope: deliverables, timeline, fixed price. If the numbers or the approach don't feel right to you, we re-work it before anything is committed. You leave with clarity, whether you move forward or not.",
   },
   {
     numeral: "03",
     title: "Build",
-    body: "I build in the open. You see progress every week, touch the work as it comes together, and shape it with me as we go. No six-month black box, no 'big reveal' at the end. Nothing ships that you haven't used yourself.",
+    body: "I build in the open. You see progress weekly, try the work as it comes together, and give me feedback while it's still easy to change. Nothing ships that you haven't touched first.",
   },
   {
     numeral: "04",
     title: "Launch & Support",
-    body: "Launch day is a beginning, not an end. I stick around to tune, train your team, and handle the first round of 'wait, can we also do…?' that always comes up. You own everything — the code, the accounts, the keys. No vendor lock-in.",
+    body: "Launch day is a beginning, not an end. I stay on to tune, train your team, and help with the follow-up questions that always come up. You own what we build — the code, the accounts, the keys.",
   },
 ];
 
@@ -38,11 +38,11 @@ export function Process() {
               Process
             </p>
             <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-5xl">
-              No <span className="mithril-text">black boxes</span>. No ghosting.
+              Clear scope, <span className="mithril-text">no black boxes</span>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-foreground-muted sm:text-lg">
-              You&rsquo;ve been burned before. Here&rsquo;s exactly what working
-              together looks like — so you know what you&rsquo;re getting into.
+              Here&rsquo;s what working together looks like end to end — so you
+              know what you&rsquo;re signing up for before you sign up for it.
             </p>
           </div>
         </Reveal>

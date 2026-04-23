@@ -4,26 +4,26 @@ const services = [
   {
     rune: "◈",
     title: "Websites",
-    pain: "For businesses whose site is slow, dated, or held hostage by the agency that built it.",
-    body: "Custom-built sites — no templates, no drag-and-drop page builders, no 'it only works if you pay us for hosting.' Fast, easy for your team to update, and yours to keep. Launch-ready in weeks, not quarters.",
+    pain: "For businesses whose site isn't doing the work it should.",
+    body: "Custom-built sites — not templates. Designed to be fast, findable, easy for your team to update, and actually reflect the business you're running today. Yours to keep, wherever you want it hosted.",
   },
   {
     rune: "⟡",
     title: "AI Agents",
-    pain: "For businesses that know AI matters but can't see a clear path to actually using it.",
-    body: "We'll find the one workflow in your business where AI will pay for itself — then I'll build the agent that does it. Trained on your data, fit to your voice, explained in plain English so nobody on your team is afraid of it.",
+    pain: "For businesses that know AI matters but haven't found their first real use for it.",
+    body: "We start with the one workflow in your business where AI will pay for itself — then I build the agent that runs it. Trained on your data, fit to your voice, and explained in plain English so your team isn't guessing.",
   },
   {
     rune: "❖",
     title: "Automations",
-    pain: "For businesses bleeding hours to copy-paste, manual approvals, and tools that don't talk to each other.",
-    body: "I'll wire your existing systems together so data moves on its own, approvals don't rot in inboxes, and your team stops doing $15/hour work in a business that can't afford to lose the time.",
+    pain: "For businesses where too much work still lives in people's heads and inboxes.",
+    body: "I wire your existing systems together so data moves on its own, approvals don't rot, and the routine stuff happens quietly in the background. Your team keeps the thinking work; the software handles the shuffling.",
   },
   {
     rune: "✦",
     title: "Custom Software",
-    pain: "For businesses where every SaaS tool is almost right but none of them actually fit.",
-    body: "Internal dashboards, client portals, niche apps — built around how your business actually works instead of forcing you to bend around a generic product. Priced like a project, not a six-figure enterprise rollout.",
+    pain: "For businesses bending around tools, instead of tools bending around them.",
+    body: "Internal dashboards, client portals, niche apps — built around how your business actually works. Priced like a project, not a six-figure enterprise rollout. Scales with you, not against you.",
   },
 ];
 
@@ -40,8 +40,9 @@ export function Services() {
               Four things, done <span className="mithril-text">really well</span>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-foreground-muted sm:text-lg">
-              No menu of 50 services. No 'we do a bit of everything.' Four
-              disciplines, sharpened until they&rsquo;re sharp.
+              Not a menu of fifty services. Four disciplines, each sharpened
+              until it&rsquo;s sharp — and deliberately chosen because they
+              tend to work together.
             </p>
           </div>
         </Reveal>
