@@ -14,12 +14,18 @@ export function Manifesto() {
           <div className="space-y-4 text-base leading-relaxed text-foreground-muted sm:text-lg">
             <p>
               I&rsquo;m Ben Williamson. I&rsquo;ve spent most of my career as a
-              director of operations, keeping small businesses running from the
-              inside.
+              director of operations, the quiet role that keeps a business
+              running from the inside.
             </p>
             <p>
-              Mithryl Labs is me doing that work for yours. Based in Palatine,
-              IL. Remote-friendly.
+              Mithril, in Tolkien&rsquo;s telling, wasn&rsquo;t valued because
+              it was rare. It was valued because it was{" "}
+              <em className="text-foreground">right</em>: light, strong, and
+              quiet until it mattered. That&rsquo;s the bar.
+            </p>
+            <p>
+              Mithryl Labs is me doing that work for your business. Based in
+              Palatine, IL. Usually accompanied by two mini poodles.
             </p>
           </div>
         </Reveal>
