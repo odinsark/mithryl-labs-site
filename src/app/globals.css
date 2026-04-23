@@ -1,26 +1,193 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Light mode — parchment & ink */
+  --background: #f2ece0;
+  --background-secondary: #e9e1d0;
+  --foreground: #13182a;
+  --foreground-muted: #4a5266;
+  --accent: #2a3d6b;
+  --accent-glow: #5a78b8;
+  --mithril: #8a96a8;
+  --rule: rgba(19, 24, 42, 0.14);
+  --surface: rgba(255, 251, 240, 0.6);
+}
+
+.dark {
+  /* Dark mode — midnight forge */
+  --background: #05070f;
+  --background-secondary: #0b1122;
+  --foreground: #e8ecf5;
+  --foreground-muted: #9aa3b8;
+  --accent: #b8c6e0;
+  --accent-glow: #8bb8ff;
+  --mithril: #c7d0dd;
+  --rule: rgba(232, 236, 245, 0.1);
+  --surface: rgba(20, 26, 48, 0.4);
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-accent: var(--accent);
+  --color-accent-glow: var(--accent-glow);
+  --color-mithril: var(--mithril);
+  --color-rule: var(--rule);
+  --color-surface: var(--surface);
+  --font-display: var(--font-cinzel);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Background grain / texture */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 20% 10%, var(--accent-glow) 0%, transparent 35%),
+    radial-gradient(circle at 80% 80%, var(--accent) 0%, transparent 40%);
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.dark body::before {
+  opacity: 0.18;
+}
+
+/* Noise overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  mix-blend-mode: overlay;
+}
+
+.dark body::after {
+  opacity: 0.08;
+}
+
+main, header, footer, section {
+  position: relative;
+  z-index: 2;
+}
+
+.font-display {
+  font-family: var(--font-cinzel), "Times New Roman", serif;
+  letter-spacing: 0.02em;
+}
+
+/* Shimmering mithril text */
+.mithril-text {
+  background: linear-gradient(
+    100deg,
+    var(--accent) 0%,
+    var(--accent-glow) 25%,
+    var(--mithril) 50%,
+    var(--accent-glow) 75%,
+    var(--accent) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 8s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Rune-like divider */
+.rune-rule {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--mithril);
+}
+
+.rune-rule::before,
+.rune-rule::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--mithril), transparent);
+}
+
+/* Floating animation for particles */
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0); opacity: 0.3; }
+  50% { transform: translate(20px, -30px); opacity: 0.8; }
+}
+
+.drift {
+  animation: drift 12s ease-in-out infinite;
+}
+
+/* Subtle pulse for the forge glow */
+@keyframes forge-pulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.08); }
+}
+
+.forge-pulse {
+  animation: forge-pulse 6s ease-in-out infinite;
+}
+
+/* Gradient border cards */
+.mithril-border {
+  position: relative;
+  background: var(--background-secondary);
+}
+
+.mithril-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--mithril), transparent 40%, var(--accent-glow) 80%, var(--mithril));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Reveal on view */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--background);
 }
