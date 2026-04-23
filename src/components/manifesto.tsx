@@ -21,12 +21,9 @@ export function Manifesto() {
               Mithril, in Tolkien&rsquo;s telling, wasn&rsquo;t valued because
               it was rare. It was valued because it was{" "}
               <em className="text-foreground">right</em>: light, strong, and
-              quiet until it mattered. That&rsquo;s the bar.
+              quiet until it mattered.
             </p>
-            <p>
-              Mithryl Labs is me doing that work for your business. Based in
-              Palatine, IL. Usually accompanied by two mini poodles.
-            </p>
+            <p>That&rsquo;s the bar. Mithryl Labs is me building to it.</p>
           </div>
         </Reveal>
       </div>
