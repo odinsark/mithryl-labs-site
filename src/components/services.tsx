@@ -4,22 +4,22 @@ const services = [
   {
     rune: "◈",
     title: "Websites",
-    body: "Custom marketing sites, client portals, and private team wikis. Built in Next.js, fast and search-friendly.",
+    body: "A new site for your business, a portal for your customers, or a private site just for your team. Fast, professional, and easy to find online.",
   },
   {
     rune: "⟡",
     title: "AI Agents",
-    body: "Claude-powered agents tuned to a specific workflow: research, content generation, document analysis, internal Q&A. Trained on your data.",
+    body: "A custom AI assistant that handles specific work in your business: answering questions from your documents, drafting in your voice, or supporting your customers.",
   },
   {
     rune: "❖",
     title: "Automations",
-    body: "Webhooks, scheduled pipelines, and cross-tool integrations. Meeting transcripts become coaching emails. Data moves on its own.",
+    body: "Take the repetitive work off your team's plate. Your existing tools connected so data moves on its own and busywork happens in the background.",
   },
   {
     rune: "✦",
     title: "Custom Software",
-    body: "Internal dashboards and team-facing tools that refresh automatically from your data sources. Built around how your business actually works.",
+    body: "When off-the-shelf tools don't fit your business, I build the one that does. Dashboards, customer portals, or the specific tool your team actually needs.",
   },
 ];
 
