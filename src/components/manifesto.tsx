@@ -34,14 +34,15 @@ export function Manifesto() {
             <p>
               Small businesses get served badly by the software industry. The
               enterprise stuff is expensive and overbuilt. The cheap stuff is
-              brittle and forgettable. And the agency layer in the middle is
+              brittle and forgettable. The agency layer in the middle is
               mostly selling the same five templates to everyone.
             </p>
             <p>
-              Mithryl Labs is a one-person studio built on the opposite bet:
-              that a small, thoughtful shop can deliver the quality of a big
-              agency with the responsiveness of a neighbor. Fewer clients,
-              closer attention, better work.
+              I started Mithryl Labs because I got tired of watching good
+              businesses get overlooked, oversold, or pushed into tools that
+              weren&rsquo;t built for them. A small, thoughtful shop can do
+              the work of a big agency with the responsiveness of a neighbor.
+              Fewer clients, closer attention, better work.
             </p>
             <p className="text-foreground">Ben Williamson, Mithryl Labs</p>
           </div>

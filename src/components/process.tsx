@@ -19,7 +19,7 @@ const steps = [
   {
     numeral: "04",
     title: "Launch & Support",
-    body: "Launch day is a beginning, not an end. I stay on to tune, train your team, and help with the follow-up questions that always come up. You own what we build: the code, the accounts, the keys.",
+    body: "Launching isn't the finish line. I stay on to tune, train your team, and work through the follow-up questions that always come up. You own what we build: the code, the accounts, the keys.",
   },
 ];
 

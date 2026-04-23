@@ -11,7 +11,7 @@ const services = [
     rune: "⟡",
     title: "AI Agents",
     pain: "For businesses that know AI matters but haven't found their first real use for it.",
-    body: "We start with the one workflow in your business where AI will pay for itself. Then I build the agent that runs it. Trained on your data, fit to your voice, and explained in plain English so your team isn't guessing.",
+    body: "We start with the one workflow in your business where AI will pay for itself. Then I build the agent that runs it. Trained on your data, fit to your voice, and explained in plain English so you actually understand what it's doing.",
   },
   {
     rune: "❖",
@@ -40,9 +40,8 @@ export function Services() {
               Four things, done <span className="mithril-text">really well</span>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-foreground-muted sm:text-lg">
-              Not a menu of fifty services. Four disciplines, each sharpened
-              until it&rsquo;s sharp, and deliberately chosen because they
-              tend to work together.
+              Not a menu of fifty services. Four disciplines, chosen
+              deliberately because they reinforce each other.
             </p>
           </div>
         </Reveal>

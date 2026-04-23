@@ -52,7 +52,7 @@ export function Contact() {
                 <span className="hidden h-1 w-1 rounded-full bg-mithril sm:block" />
                 <span>Remote-first</span>
                 <span className="hidden h-1 w-1 rounded-full bg-mithril sm:block" />
-                <span>Small and mid-size only</span>
+                <span>Working with small businesses only</span>
               </div>
             </div>
           </div>

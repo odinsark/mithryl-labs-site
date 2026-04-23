@@ -40,8 +40,8 @@ export function Hero() {
 
         <p className="mt-6 max-w-xl text-base leading-relaxed text-foreground-muted sm:text-lg">
           I build custom websites, AI agents, and automations for small
-          businesses. One person, close attention, sharp work. Not a team of
-          six you&rsquo;ll never meet.
+          businesses. One person, close attention, careful work that actually
+          fits the business you&rsquo;re running.
         </p>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
