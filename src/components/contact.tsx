@@ -3,38 +3,28 @@ import { Reveal } from "@/components/reveal";
 export function Contact() {
   return (
     <section id="contact" className="relative px-6 py-8 sm:py-10">
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-3xl">
         <Reveal>
-          <div className="mithril-border relative overflow-hidden rounded-3xl p-10 text-center sm:p-16">
+          <div className="mithril-border relative overflow-hidden rounded-3xl p-10 sm:p-14">
             <div
               aria-hidden
               className="forge-pulse pointer-events-none absolute inset-0"
               style={{
                 background:
                   "radial-gradient(circle at 50% 0%, var(--accent-glow) 0%, transparent 60%)",
-                opacity: 0.25,
+                opacity: 0.2,
               }}
             />
             <div className="relative">
-              <p className="font-display text-sm uppercase tracking-[0.4em] text-mithril">
-                Start the conversation
-              </p>
-              <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-5xl">
-                Tell me what&rsquo;s <span className="mithril-text">slowing you down</span>
+              <h2 className="font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+                Get in touch
               </h2>
-              <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-foreground-muted sm:text-lg">
-                No sales dance. No long discovery gauntlet. Send me a short
-                note about what&rsquo;s going on in your business, and
-                I&rsquo;ll reply within a business day.
-              </p>
-              <p className="mx-auto mt-4 max-w-xl text-sm italic leading-relaxed text-foreground-muted">
-                I don&rsquo;t know yet whether I&rsquo;m the right fit for what
-                you&rsquo;re dealing with. If I am, I&rsquo;ll tell you how
-                I&rsquo;d help. If I&rsquo;m not, I&rsquo;ll tell you that too,
-                and point you at someone who might be.
+              <p className="mt-4 text-base leading-relaxed text-foreground-muted sm:text-lg">
+                Email me about what you&rsquo;re working on. I&rsquo;ll reply
+                within a business day.
               </p>
 
-              <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <div className="mt-8">
                 <a
                   href="mailto:ben@mithryllabs.com"
                   className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-full bg-foreground px-8 text-sm font-medium uppercase tracking-widest text-background transition-transform hover:-translate-y-0.5"
@@ -45,14 +35,6 @@ export function Contact() {
                     className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-accent-glow/30 to-transparent transition-transform duration-700 group-hover:translate-x-full"
                   />
                 </a>
-              </div>
-
-              <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs uppercase tracking-[0.3em] text-foreground-muted">
-                <span>Palatine, IL</span>
-                <span className="hidden h-1 w-1 rounded-full bg-mithril sm:block" />
-                <span>Remote-first</span>
-                <span className="hidden h-1 w-1 rounded-full bg-mithril sm:block" />
-                <span>Working with small businesses only</span>
               </div>
             </div>
           </div>

@@ -4,22 +4,22 @@ const steps = [
   {
     numeral: "01",
     title: "Discovery",
-    body: "We talk. I ask questions. Lots of them. The goal of the first call is to figure out what's actually slowing you down and whether I'm the right person to help. If I'm not, I'll tell you. If I am, we keep going.",
+    body: "We talk. I learn your business and figure out whether I can help.",
   },
   {
     numeral: "02",
     title: "Proposal",
-    body: "A written scope: deliverables, timeline, fixed price. If the numbers or the approach don't feel right to you, we re-work it before anything is committed. You leave with clarity, whether you move forward or not.",
+    body: "Written scope, fixed price, clear timeline. You can walk away with clarity whether you move forward or not.",
   },
   {
     numeral: "03",
     title: "Build",
-    body: "I build in the open. You see progress weekly, try the work as it comes together, and give me feedback while it's still easy to change. Nothing ships that you haven't touched first.",
+    body: "I build in the open. You see progress weekly and shape the work as it comes together.",
   },
   {
     numeral: "04",
-    title: "Launch & Support",
-    body: "Launching isn't the finish line. I stay on to tune, train your team, and work through the follow-up questions that always come up. You own what we build: the code, the accounts, the keys.",
+    title: "Launch",
+    body: "I stay on to tune, train your team, and handle follow-ups. You own everything we built.",
   },
 ];
 
@@ -33,21 +33,12 @@ export function Process() {
 
       <div className="mx-auto max-w-5xl">
         <Reveal>
-          <div className="mb-8 text-center">
-            <p className="font-display text-sm uppercase tracking-[0.4em] text-mithril">
-              Process
-            </p>
-            <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-5xl">
-              Clear scope, <span className="mithril-text">no black boxes</span>
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-foreground-muted sm:text-lg">
-              Here&rsquo;s what working together looks like end to end, so you
-              know what you&rsquo;re signing up for before you sign up for it.
-            </p>
-          </div>
+          <h2 className="mb-10 font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+            How it works
+          </h2>
         </Reveal>
 
-        <ol className="relative space-y-8">
+        <ol className="relative space-y-6">
           <div
             aria-hidden
             className="absolute left-6 top-4 bottom-4 hidden w-px bg-gradient-to-b from-mithril/0 via-mithril/50 to-mithril/0 sm:block"
@@ -55,24 +46,16 @@ export function Process() {
           {steps.map((step, i) => (
             <Reveal key={step.numeral} delay={i * 80}>
               <li className="relative flex flex-col gap-4 sm:flex-row sm:gap-10">
-                <div className="flex items-center gap-4 sm:w-32 sm:shrink-0 sm:flex-col sm:items-start sm:gap-2">
+                <div className="flex items-center gap-4 sm:w-32 sm:shrink-0">
                   <span className="relative flex h-12 w-12 items-center justify-center rounded-full border border-mithril/40 bg-background-secondary font-display text-sm text-accent">
                     {step.numeral}
-                    <span
-                      aria-hidden
-                      className="absolute inset-0 rounded-full border border-mithril/20"
-                      style={{ transform: "scale(1.4)" }}
-                    />
-                  </span>
-                  <span className="font-display text-xs uppercase tracking-[0.3em] text-foreground-muted sm:mt-2">
-                    Step {i + 1}
                   </span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-display text-2xl font-semibold text-foreground sm:text-3xl">
+                  <h3 className="font-display text-xl font-semibold text-foreground sm:text-2xl">
                     {step.title}
                   </h3>
-                  <p className="mt-4 max-w-2xl text-base leading-relaxed text-foreground-muted sm:text-lg">
+                  <p className="mt-2 max-w-2xl text-base leading-relaxed text-foreground-muted">
                     {step.body}
                   </p>
                 </div>

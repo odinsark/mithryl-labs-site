@@ -6,9 +6,6 @@ export function Nav() {
           <a href="#work" className="transition-colors hover:text-foreground">
             Work
           </a>
-          <a href="#process" className="transition-colors hover:text-foreground">
-            Process
-          </a>
           <a href="#contact" className="transition-colors hover:text-foreground">
             Contact
           </a>

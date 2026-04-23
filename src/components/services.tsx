@@ -4,26 +4,22 @@ const services = [
   {
     rune: "◈",
     title: "Websites",
-    pain: "For businesses whose site isn't doing the work it should.",
-    body: "Custom-built sites, not templates. Designed to be fast, findable, easy for your team to update, and actually reflect the business you're running today. Yours to keep, wherever you want it hosted.",
+    body: "Custom-built, fast, and easy for your team to update. Yours to keep, wherever you want to host it.",
   },
   {
     rune: "⟡",
     title: "AI Agents",
-    pain: "For businesses that know AI matters but haven't found their first real use for it.",
-    body: "We start with the one workflow in your business where AI will pay for itself. Then I build the agent that runs it. Trained on your data, fit to your voice, and explained in plain English so you actually understand what it's doing.",
+    body: "Agents that handle the workflows in your business where AI actually saves time. Trained on your data, explained in plain English.",
   },
   {
     rune: "❖",
     title: "Automations",
-    pain: "For businesses where too much work still lives in people's heads and inboxes.",
-    body: "I wire your existing systems together so data moves on its own, approvals don't rot, and the routine stuff happens quietly in the background. Your team keeps the thinking work; the software handles the shuffling.",
+    body: "Your existing tools, wired together. Data moves on its own, approvals stop rotting in inboxes, routine work quietly disappears.",
   },
   {
     rune: "✦",
     title: "Custom Software",
-    pain: "For businesses bending around tools, instead of tools bending around them.",
-    body: "Internal dashboards, client portals, niche apps, built around how your business actually works. Priced like a project, not a six-figure enterprise rollout. Scales with you, not against you.",
+    body: "Internal dashboards, client portals, niche apps. Built for how your business actually works, priced like a project.",
   },
 ];
 
@@ -32,18 +28,9 @@ export function Services() {
     <section id="work" className="relative px-6 py-8 sm:py-10">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <div className="mb-8 text-center">
-            <p className="font-display text-sm uppercase tracking-[0.4em] text-mithril">
-              What I build
-            </p>
-            <h2 className="mt-6 font-display text-3xl font-semibold tracking-tight text-foreground sm:text-5xl">
-              Four things, done <span className="mithril-text">really well</span>
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-foreground-muted sm:text-lg">
-              Not a menu of fifty services. Four disciplines, chosen
-              deliberately because they reinforce each other.
-            </p>
-          </div>
+          <h2 className="mb-10 font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+            What I build
+          </h2>
         </Reveal>
 
         <div className="grid gap-6 sm:grid-cols-2 sm:auto-rows-fr">
@@ -56,20 +43,17 @@ export function Services() {
                 />
                 <div className="relative">
                   <div className="mb-6 flex items-baseline justify-between">
-                    <span className="font-display text-4xl text-mithril">
+                    <span className="font-display text-3xl text-mithril">
                       {service.rune}
                     </span>
                     <span className="font-display text-xs uppercase tracking-[0.3em] text-foreground-muted">
                       0{i + 1}
                     </span>
                   </div>
-                  <h3 className="font-display text-2xl font-semibold text-foreground sm:text-3xl">
+                  <h3 className="font-display text-2xl font-semibold text-foreground">
                     {service.title}
                   </h3>
-                  <p className="mt-3 text-sm italic leading-relaxed text-accent">
-                    {service.pain}
-                  </p>
-                  <p className="mt-5 text-base leading-relaxed text-foreground-muted">
+                  <p className="mt-4 text-base leading-relaxed text-foreground-muted">
                     {service.body}
                   </p>
                 </div>
